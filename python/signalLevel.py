@@ -3,8 +3,8 @@ import os
 import subprocess
 
 OOR = "Out of Range"
-ips = ['192.168.4.2', '192.168.4.3']
-addresses = ['LeaPiNode1', 'LeaPiNode2']
+ips = ['192.168.4.2', '192.168.4.3', '192.168.4.4']
+addresses = ['LeaPiNode1', 'LeaPiNode2', 'LaPiNode3']
 interface = 'wlan1'
 
 
