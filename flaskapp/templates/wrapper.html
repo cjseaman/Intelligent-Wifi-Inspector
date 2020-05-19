@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <style>
+      form {display: inline;}
+    </style>
+  </head>
+
+  <body>
+    <div class="containter" id ='heatmap'>
+      <div class = "row justify-content-center">
+        <h1 class = "col-xs-12" style= 'padding-top:25px;' >LeaPi Heatmap</h1>
+      </div>
+
+      <div class = "row justify-content-center">
+        <div class = "col-12">
+          {% include 'index.html' %}
+        </div>
+      </div>
+
+      <br>
+      <div class = "row justify-content-center">
+        <h2 class = "col-xs-12" style = "padding-bottom: 25px;">{{result}}</h2>
+      </div>
+
+      <div class = "row justify-content-center">
+        <div class = "col-3" align="center">
+          <form action='/clear' method="GET">
+            <input class = "btn btn-primary" type='submit' value='Clear'>
+          </form>
+        </div>
+
+        <div class = "col-3" align="center">
+          <form action='/scan' method="GET">
+            <input class = "btn btn-primary" type='submit' value='Scan'>
+          </form>
+        </div>
+
+        <div class = "col-3" align="center">
+          <form action='/calibrateNode2' method="GET">
+            <input class = "btn btn-primary" type='submit' value='Calibrate Node 2'>
+          </form>
+        </div>
+
+        <div class = "col-3" align = "center">
+          <form action='/calibrateNode1' method="GET">
+            <input class = "btn btn-primary" type='submit' value='Calibrate Node 1'>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
